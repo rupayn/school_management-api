@@ -1,0 +1,41 @@
+{
+  "name": "school_management_api",
+  "version": "1.0.0",
+  "description": "This project is a lightweight Node.js backend built with Express.js and Prisma ORM, designed to manage school data efficiently. It provides RESTful APIs to add new schools and retrieve a list of nearby schools sorted by geographic proximity using the Haversine formula. The data is stored in a MySQL database, and the system is optimized for deployment on serverless platforms like AWS Lambda for cost-effective usage.",
+  "keywords": [
+    "school",
+    "backend"
+  ],
+  "homepage": "https://github.com/rupayn/school_management-api#readme",
+  "bugs": {
+    "url": "https://github.com/rupayn/school_management-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupayn/school_management-api.git"
+  },
+  "license": "ISC",
+  "author": "Rupayan Nandi",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build":"tsc -b",
+    "start": "node ./dist/index.js",
+    "dev": "tsx ./src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "prisma": "^6.8.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "tsx": "^4.19.4"
+  }
+}
