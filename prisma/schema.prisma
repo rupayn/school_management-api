@@ -13,3 +13,11 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Schools {
+id Int @id @default(autoincrement())
+name String
+address String
+latitude  Float
+longitude Float
+}

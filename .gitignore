@@ -138,3 +138,5 @@ dist
 /generated/prisma
 
 /generated/prisma
+prisma/migrations/migration_lock.toml
+prisma/migrations/20250524003842_init/migration.sql

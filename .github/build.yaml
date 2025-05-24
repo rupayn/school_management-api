@@ -1,0 +1,21 @@
+name: Build success on PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build the project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+      - name: install dependencies
+        run: npm install
+      - name: build
+        run: npm run build
