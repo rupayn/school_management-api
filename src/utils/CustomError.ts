@@ -1,13 +1,19 @@
+interface ErrorDetail {
+    message: string;
+    code?: string;
+}
+
+
 export class CustomError extends Error {
     public statusCode: number;
     public success: boolean;
-    public error: any[];
+    public error: ErrorDetail[];
 
     constructor(
         statusCode: number,
         message: string = "Something went wrong",
-        error: any[] = [],
-        stack?: string
+        error: ErrorDetail[] = [],
+        stack?: string,
     ) {
         super(message);
 
