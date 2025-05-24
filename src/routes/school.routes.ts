@@ -1,9 +1,10 @@
 import express from "express";
+import { addSchoolController, listSchoolController } from "../controllers";
+
 
 const router = express.Router();
 
-router.get("/school", (req:express.Request, res:express.Response) => {
-    res.send("School route");
-});
+router.get("/list-schools", listSchoolController);
+router.post("/add-school",addSchoolController)
 
 export default router;

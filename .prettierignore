@@ -15,6 +15,19 @@ yarn-error.log*
 # Ignore environment variable files
 .env
 
+# Ignore Github CIs
+
+.github/
+.github/**/* 
+
+# Ignore package.json files
+
+package*.json
+
+# Ignore tsconfig.json
+
+tsconfig.json
+
 # Ignore cache files
 .cache/
 
