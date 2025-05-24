@@ -14,11 +14,15 @@ export const addSchoolController = asyncHandler(
     async (req: express.Request, res: express.Response) => {
         const parsed = addSchoolSchema.safeParse(req.body);
         if (!parsed.success) {
-            const errorDetails = parsed.error.errors.map(err => ({
+            const errorDetails = parsed.error.errors.map((err) => ({
                 message: err.message,
-                path: err.path.join('.'), // optional, for clarity
+                path: err.path.join("."), // optional, for clarity
             }));
-            throw new CustomError(400, parsed.error.errors[0].message, errorDetails);
+            throw new CustomError(
+                400,
+                parsed.error.errors[0].message,
+                errorDetails,
+            );
         }
 
         const existingSchool = await PrismaClientInstance.schools.findFirst({

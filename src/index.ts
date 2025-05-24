@@ -28,7 +28,7 @@ app.use((err: CustomError, req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== "production") {
         console.log("Server running on port 3000");
-    } 
+    }
 });

@@ -3,7 +3,6 @@ interface ErrorDetail {
     code?: string;
 }
 
-
 export class CustomError extends Error {
     public statusCode: number;
     public success: boolean;
