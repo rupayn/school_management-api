@@ -1,7 +1,7 @@
 import { asyncHandler, CustomError, CustomSuccessResponse } from "../utils";
 import express from "express";
 import { z } from "zod";
-import { PrismaClientInstance } from "../../prisma/db";
+import { PrismaClientInstance } from "../utils/db";
 
 //Zod validation
 const querySchema = z.object({
