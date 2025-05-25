@@ -1,6 +1,6 @@
 import express from "express";
 import { asyncHandler, CustomError, CustomSuccessResponse } from "../utils";
-import { PrismaClientInstance } from "../../prisma/db";
+import { PrismaClientInstance } from "../utils/db";
 import { z } from "zod";
 
 const addSchoolSchema = z.object({
