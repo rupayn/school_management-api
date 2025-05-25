@@ -149,7 +149,7 @@ This project is a lightweight Node.js backend built with Express.js and Prisma O
       "_postman_id": "094f2c21-18bc-4408-b903-a9d9011fcb0c",
       "name": "School-Management-Api-Collection",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-05-25T09:39:38.000Z",
+      "updatedAt": "2025-05-25T09:48:54.000Z",
       "createdAt": "2025-05-24T09:58:41.000Z",
       "lastUpdatedBy": "33021369",
       "uid": "33021369-094f2c21-18bc-4408-b903-a9d9011fcb0c"
@@ -209,9 +209,12 @@ This project is a lightweight Node.js backend built with Express.js and Prisma O
             }
           },
           "url": {
-            "raw": "{{uri}}add-school",
+            "raw": "{{internet-uri}}/add-school",
             "host": [
-              "{{uri}}add-school"
+              "{{internet-uri}}"
+            ],
+            "path": [
+              "add-school"
             ]
           }
         },
